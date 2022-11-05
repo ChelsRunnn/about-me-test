@@ -1,0 +1,63 @@
+* {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: rgb(223, 207, 194);
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 25px;
+    padding-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 18px;
+    color:rgb(139, 111, 87);
+}
+
+nav {
+    background-color: rgb(139, 111, 87);
+    border: solid antiquewhite;
+    border-width: 5px 0;
+    margin: 0%;
+    text-align: right;
+    padding: 20px;
+}
+
+nav a {
+    color: antiquewhite;
+    font-size: medium;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 55px;
+    margin-left: 10px;
+}
+
+.hero {
+    height: 500px;
+    width: 100%;
+    background-image: url("https://img.freepik.com/free-photo/hand-painted-watercolor-background_24972-1973.jpg?w=1480&t=st=1667655489~exp=1667656089~hmac=8988c5cef2bb7c29f43e13c639b839e3913f02e82ae2c5a76c400684db94435f");
+    background-size: cover;
+    background-position: center;
+}
+
+article h2 {
+    font-size: 40px;
+}
+
+article h3 {
+    font-size: 25px;
+}
