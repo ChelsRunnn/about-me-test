@@ -1,5 +1,7 @@
 * {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    box-sizing: border-box;
 }
 
 body {
@@ -22,22 +24,22 @@ a {
 }
 
 p {
-    font-size: 18px;
+    /* font-size: 18px; */
     color:rgb(139, 111, 87);
 }
 
 nav {
+    display: flex;
+    justify-content: flex-end;
     background-color: rgb(139, 111, 87);
     border: solid antiquewhite;
     border-width: 5px 0;
-    margin: 0%;
-    text-align: right;
+    /* text-align: right; */
     padding: 20px;
 }
 
 nav a {
     color: antiquewhite;
-    font-size: medium;
     font-size: 20px;
 }
 
@@ -54,10 +56,60 @@ h1 {
     background-position: center;
 }
 
-article h2 {
-    font-size: 40px;
+h1 {
+    position:absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 400%;
+    color: rgb(139, 111, 87);
 }
 
-article h3 {
-    font-size: 25px;
+aside {
+    flex: 1;
+    border-right: solid rgb(139, 111, 87);
+    border-right-width: 5px;
+    padding: 80px;
+    text-align: left;
+}
+
+.projects {
+    flex: 4;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+/* article h2 {
+    font-size: 40px;
+    border-right: solid rgb(139, 111, 87);
+    border-right-width: 5px;
+    /* TODO: move border bar away from text slightly */ 
+
+article header {
+    font-size: 150%;
+    background-color: rgb(139, 111, 87);
+    color: antiquewhite;
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* article section {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0, 1, auto;
+} */
+
+/* .coming-soon {
+    flex: 1;
+} */
+
+.coming-soon img {
+    border: solid rgb(139, 111, 87);
+    border-width: 3px;
+    height: 300px;
+    width: 50%;
 }
