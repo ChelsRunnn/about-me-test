@@ -81,10 +81,6 @@ aside {
     align-items: flex-start;
     flex-grow: 1;
 }
-/* article h2 {
-    font-size: 40px;
-    border-right: solid rgb(139, 111, 87);
-    border-right-width: 5px;
     /* TODO: move border bar away from text slightly */ 
 
 article header {
