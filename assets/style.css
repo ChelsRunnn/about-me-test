@@ -34,18 +34,12 @@ nav {
     background-color: rgb(139, 111, 87);
     border: solid antiquewhite;
     border-width: 5px 0;
-    /* text-align: right; */
     padding: 20px;
 }
 
 nav a {
     color: antiquewhite;
     font-size: 20px;
-}
-
-h1 {
-    font-size: 55px;
-    margin-left: 10px;
 }
 
 .hero {
@@ -65,25 +59,57 @@ h1 {
 }
 
 aside {
-    flex: 1;
+    flex-basis: 20%;
     border-right: solid rgb(139, 111, 87);
     border-right-width: 5px;
-    padding: 80px;
-    text-align: left;
+    /* padding: 80px; */
+    text-align: center;
+}
+
+h2 {
+    font-size: 200%;
+    color: rgb(108, 88, 70);
+}
+
+#about-me {
+    display: flex;
+    flex-basis: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.headshot img {
+    display: flex;
+    flex-basis: 70%;
+    margin-left: 5%;
+    border: solid rgb(139, 111, 87);
+    border-width: 3px;
+    border-radius: 65px;
+    width: 30%;
+    height: 75%;
+}
+
+.headshot p {
+    display: flex;
+    margin-left: 5%;
+}
+
+#work {
+    display: flex;
+    flex-basis: 20%;
+    margin-bottom: 5%;
 }
 
 .projects {
-    flex: 4;
-    padding: 50px;
     display: flex;
+    flex-basis: 70%;
+    padding: 50px;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
-    flex-grow: 1;
 }
-    /* TODO: move border bar away from text slightly */ 
 
-article header {
+.projects header {
     font-size: 150%;
     background-color: rgb(139, 111, 87);
     color: antiquewhite;
@@ -92,13 +118,29 @@ article header {
 .projects img {
     border: solid rgb(139, 111, 87);
     border-width: 3px;
-    height: 300px;
+    height: 100%;
     width: 100%;
 }
 
 .project-1 {
-    align-self: flex-start;
+    flex-basis: 100%;
 }
+
+.coming-soon {
+    flex-basis: 48%;
+    justify-content: space-around;
+}
+
+#contact-me {
+    display: flex;
+    flex-basis: 20%;
+}
+
+#footer li {
+    display: flex;
+    flex-basis: 70%;
+}
+
 /* TODO: just added the above code before breaking for gym
 need to make horiseon proj larger than the other 4 */
 
