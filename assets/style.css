@@ -73,6 +73,7 @@ h2 {
 
 #about-me {
     display: flex;
+    flex-wrap: wrap;
     flex-basis: 20%;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -85,14 +86,15 @@ h2 {
     border: solid rgb(139, 111, 87);
     border-width: 3px;
     border-radius: 65px;
-    width: 30%;
-    height: 75%;
+    width: auto;
+    height: 300px;
 }
 
 .headshot p {
     display: flex;
     margin-left: 5%;
 }
+/* TODO: move text so it is to the right of my pic on large screens */
 
 #work {
     display: flex;
