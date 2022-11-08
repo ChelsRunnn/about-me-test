@@ -118,28 +118,40 @@ h2 {
     background-color: rgb(139, 111, 87);
     color: antiquewhite;
     width: 30%;
-    padding-left: 2%;
-    padding-right: 1%;
+    padding: 2%
 }
 /* TODO: Move project title on top of images */
 
 .projects img {
     border: solid rgb(139, 111, 87);
-    border-width: 3px;
+    border-width: 5px;
     height: 100%;
     width: 100%;
 }
 
 .project-1 {
     flex-basis: 100%;
+    position: relative;
+}
+
+.project-1 header {
+    position: absolute;
+    bottom: 20px;
+    /* left: 20px; */
 }
 
 .coming-soon {
     flex-basis: 48%;
     justify-content: flex-start;
     padding-top: 1%;
+    position: relative;
 }
 
+.coming-soon header {
+    position: absolute;
+    bottom: 20px;
+    /* left: 20px; */
+}
 #contact-me {
     display: flex;
     flex-basis: 20%;
@@ -157,14 +169,14 @@ h2 {
 
 .footer li {
     display: inline;
-    flex-basis: 100%;
+    flex-basis: 70%;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
 
-/* TODO: Display Responsiveness */
 
+/* TODO: Display Responsiveness */
 
 /* @media screen and (max-width:992px) {
 
