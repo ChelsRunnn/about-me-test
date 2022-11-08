@@ -15,6 +15,7 @@ nav li {
     display: inline;
     margin-left: 25px;
     padding-left: 10px;
+    column-count: 4;
 }
 
 a {
@@ -24,6 +25,7 @@ a {
 nav {
     display: flex;
     justify-content: flex-end;
+    flex-direction:  row;
     background-color: rgb(139, 111, 87);
     border: solid antiquewhite;
     border-width: 5px 0;
@@ -32,7 +34,7 @@ nav {
 
 nav a {
     color: antiquewhite;
-    font-size: 20px;
+    font-size: 100%;
 }
 
 .hero {
@@ -86,8 +88,8 @@ h2 {
     border: solid rgb(139, 111, 87);
     border-width: 3px;
     border-radius: 65px;
-    width: auto;
-    height: 250px;
+    width: 150px;
+    height: auto;
 }
 /* TODO: fix image distortion */
 
@@ -160,33 +162,81 @@ h2 {
 .footer {
     display: flex;
     flex-basis: 70%;
-    /* padding-left: 5%; */
-    /* flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around; */
-    /* align-items: flex-start; */
 }
 
 .footer li {
-    display: inline;
-    flex-basis: 70%;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-}
+    display: inline-flex;
+    /* /* flex-basis: 70%; */
+    /* flex-wrap:nowrap; */
+    /* flex-direction: flex-start; */
+    /* justify-content: space-around; */
+    padding-right: 15px;
+} 
 
 
 /* TODO: Display Responsiveness */
 
-/* @media screen and (max-width:992px) {
+  @media all and (max-width: 768px) {
+    * {
+        font-size: 16px;
+      }
 
-}
+    nav li {
+        display: block;
+        padding: .5%;
+        margin: .5%;
+        width: 100%;
+        text-align: center;
+    }
+      
+    h1 {
+        margin: 15%;
+    }
 
-@media (max-width 768px) {
-    .project-1 {
+    #about-me, #work, #contact-me {
+        flex-direction: column;
         flex-basis: 100%;
     }
-    .coming-soon {
+    
+    aside {
+        border-bottom: solid rgb(139, 111, 87);
+        border-bottom-width: 3px;
+        border-right: 0;
+    }
+
+    .headshot {
+        display: block;
+        text-align: center;
+    }
+
+    .headshot img {
+    flex-basis: 100%;
+    margin-top: 2%;
+    border: solid rgb(139, 111, 87);
+    border-width: 3x;
+    border-radius: 65px;
+    width: 150px;
+    height: auto;
+    margin-left: 35%;
+    }
+
+    .headshot p {
+        margin-right: 5%;
+    }
+
+    .projects {
+        flex-direction: column;
         flex-basis: 100%;
     }
-} */
+
+    .footer{
+        display: block;
+    }
+    
+    .footer li {
+        display: block;
+        text-align: center;
+        margin: .5%;    
+        width: 100%;
+    }
+  }
