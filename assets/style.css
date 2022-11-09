@@ -15,7 +15,7 @@ nav li {
     display: inline;
     margin-left: 25px;
     padding-left: 10px;
-    column-count: 4;
+    column-count: 3;
 }
 
 a {
