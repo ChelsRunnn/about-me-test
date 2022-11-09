@@ -15,7 +15,7 @@ N/A
 
 ## Usage
 
-[Portfolio-Screenshot](./assets/Portfolio_Screenshot.png)
+![Portfolio-Screenshot](./assets/Portfolio_Screenshot.png)
 
 To learn more about me, visit my portfolio [here](https://chelsrunnn.github.io/portfolio/)!
 
